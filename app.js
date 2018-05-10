@@ -8,7 +8,7 @@ $('#login').click(function () {
         console.log(result.user);
         guardaDatos(result.user);
         $('#login').hide();
-        $('#root').append("<img src='"+ result.user.photoURL+"' />")
+        $('#root').append("<img width='100px' src='"+ result.user.photoURL+"' />")
     });
 });
 
@@ -33,9 +33,9 @@ $('#guardar').click(function(){
     })
 });
 
-//aqui estoy leyendo de la BD
+//aqui estoy leyendo de la BD (escuhar cambios)
 firebase.database().ref("moisanch")
 .on("child_added", function(s){
     var user = s.val();
-    $('#root').append("<img src='"+user.foto+"' />");
+    $('#root').append("<img width='100px' src='"+user.foto+"' />");
 })
