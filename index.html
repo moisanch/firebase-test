@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>moisanch-projecttest1 Firebase</title>
+</head>
+<body>
+    <h1>Iniciar sesión</h1>
+
+    <button id="login">
+        Inicia con Google
+    </button>
+    <div id="root"></div>
+    <button id="guardar">
+        Guardar
+    </button>
+
+
+    <script
+    src="https://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+
+    
+<script src="https://www.gstatic.com/firebasejs/5.0.1/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyCsNQW-0jLD0MUel1u6ykCoZQLlDzKYa8k",
+    authDomain: "moisanch-projecttest1.firebaseapp.com",
+    databaseURL: "https://moisanch-projecttest1.firebaseio.com",
+    projectId: "moisanch-projecttest1",
+    storageBucket: "moisanch-projecttest1.appspot.com",
+    messagingSenderId: "995492522421"
+  };
+  firebase.initializeApp(config);
+</script>
+
+<script src="app.js"></script>
+</body>
+</html>
